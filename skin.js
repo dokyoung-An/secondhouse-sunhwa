@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.10/20025
 // Filename: ???? ?? VR ??.ggsk
-// Generated 2024-11-01T14:42:54
+// Generated 2024-11-01T15:08:21
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_minimap_button', 2, false, { ignoreInState: 0  });
@@ -2193,7 +2193,6 @@ function pano2vrSkin(player,base) {
 			return player.getCurrentNode();
 		}
 		me.__55.onclick=function (e) {
-			player.setVariableValue('vis_furniture_button', !player.getVariableValue('vis_furniture_button'));
 			if (
 				(
 					((player.getVariableValue('vis_furniture_button') == true)) && 
@@ -2653,23 +2652,6 @@ function pano2vrSkin(player,base) {
 				return this.parentNode.ggElementNodeId();
 			}
 			return player.getCurrentNode();
-		}
-		me.__49.onclick=function (e) {
-			player.setVariableValue('vis_daynight_button', !player.getVariableValue('vis_daynight_button'));
-			if (
-				(
-					((player.getVariableValue('vis_daynight_button') == true))
-				)
-			) {
-				player.openNext("{node1}","$(cur)");
-			}
-			if (
-				(
-					((player.getVariableValue('vis_daynight_button') == false))
-				)
-			) {
-				player.openNext("{node10}","$(cur)");
-			}
 		}
 		me.__49.ggUpdatePosition=function (useTransition) {
 		}
@@ -6069,10 +6051,10 @@ function pano2vrSkin(player,base) {
 			if (me.__18a2.parentNode && me.__18a2.parentNode.classList.contains('ggskin_subelement') && me.__18a2.parentNode.parentNode.classList.contains('ggskin_scrollarea')) me.__18a2.parentNode.parentNode.ggUpdatePosition();
 		}
 		el.ggFilter = [];
-		el.ggFilter[0] = "가구ON";
+		el.ggFilter[0] = "광주1안";
 		el.ggId="\uac00\uad6c\uc788\uc74c-18A";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
+		el.ggVisible=true;
 		el.className="ggskin ggskin_cloner ";
 		el.ggType='cloner';
 		hs ='';
@@ -6082,7 +6064,7 @@ function pano2vrSkin(player,base) {
 		hs+='overflow : visible;';
 		hs+='position : absolute;';
 		hs+='top : 0px;';
-		hs+='visibility : hidden;';
+		hs+='visibility : inherit;';
 		hs+='width : 150px;';
 		hs+='pointer-events:none;';
 		el.setAttribute('style',hs);
@@ -6118,8 +6100,8 @@ function pano2vrSkin(player,base) {
 					me.__18a2.ggVisible=true;
 				}
 				else {
-					me.__18a2.style.visibility="hidden";
-					me.__18a2.ggVisible=false;
+					me.__18a2.style.visibility=(Number(me.__18a2.style.opacity)>0||!me.__18a2.style.opacity)?'inherit':'hidden';
+					me.__18a2.ggVisible=true;
 				}
 			}
 		}
@@ -9702,7 +9684,6 @@ function pano2vrSkin(player,base) {
 			return player.getCurrentNode();
 		}
 		me._m15.onclick=function (e) {
-			player.setVariableValue('vis_furniture_button', !player.getVariableValue('vis_furniture_button'));
 			if (
 				(
 					((player.getVariableValue('vis_furniture_button') == true)) && 
@@ -10065,7 +10046,6 @@ function pano2vrSkin(player,base) {
 			return player.getCurrentNode();
 		}
 		me._m14.onclick=function (e) {
-			player.setVariableValue('vis_daynight_button', !player.getVariableValue('vis_daynight_button'));
 			if (
 				(
 					((player.getVariableValue('vis_daynight_button') == false))
@@ -11576,10 +11556,10 @@ function pano2vrSkin(player,base) {
 			if (me._m18a0.parentNode && me._m18a0.parentNode.classList.contains('ggskin_subelement') && me._m18a0.parentNode.parentNode.classList.contains('ggskin_scrollarea')) me._m18a0.parentNode.parentNode.ggUpdatePosition();
 		}
 		el.ggFilter = [];
-		el.ggFilter[0] = "가구ON";
+		el.ggFilter[0] = "광주1안";
 		el.ggId="m-\uac00\uad6c\uc788\uc74c-18A";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
+		el.ggVisible=true;
 		el.className="ggskin ggskin_cloner ";
 		el.ggType='cloner';
 		hs ='';
@@ -11589,7 +11569,7 @@ function pano2vrSkin(player,base) {
 		hs+='overflow : visible;';
 		hs+='position : absolute;';
 		hs+='top : 0px;';
-		hs+='visibility : hidden;';
+		hs+='visibility : inherit;';
 		hs+='width : 150px;';
 		hs+='pointer-events:none;';
 		el.setAttribute('style',hs);
@@ -11625,8 +11605,8 @@ function pano2vrSkin(player,base) {
 					me._m18a0.ggVisible=true;
 				}
 				else {
-					me._m18a0.style.visibility="hidden";
-					me._m18a0.ggVisible=false;
+					me._m18a0.style.visibility=(Number(me._m18a0.style.opacity)>0||!me._m18a0.style.opacity)?'inherit':'hidden';
+					me._m18a0.ggVisible=true;
 				}
 			}
 		}
